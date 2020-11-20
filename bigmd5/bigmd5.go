@@ -9,7 +9,7 @@ import (
 
 const bufferSize = 65536
 
-// MD5File returns MD5 of filename
+// MD5File returns MD5 of a file
 func MD5File(filename string) ([]byte, error) {
 	file, err := os.Open(filename)
 	defer file.Close()
